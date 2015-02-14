@@ -1,4 +1,4 @@
-LiveSplit.StVoyEf
+LiveSplit.StEf2
 =================
 
 LiveSplit auto splitter for Star Trek: Elite Force 2. Can also pause LiveSplits game timer while in loading screens.
