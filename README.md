@@ -1,7 +1,7 @@
 LiveSplit.StEf2
 =================
 
-LiveSplit auto splitter for Star Trek: Elite Force 2. Can also pause LiveSplits game timer while in loading screens.
+LiveSplit auto splitter for Star Trek: Elite Force 2. Can also pause LiveSplits game timer while in loading screens. You have to rename the executable "stef2.exe" to "quake3.exe" to use this. I decided to do that because on newer graphic cards renaming it that way fixes performance issues.
 
 Manual Installation
 -------------------
