@@ -11,8 +11,7 @@ namespace LiveSplit.StEf2
     {
         private Settings settings = new Settings();
         private TimerModel model = null;
-
-        private Process gameProcess = null;
+        
         private GameInfo info = null;
         private GameEvent[] eventList = null;
         
@@ -35,7 +34,7 @@ namespace LiveSplit.StEf2
 
         public override void Update(UI.IInvalidator invalidator, Model.LiveSplitState state, float width, float height, UI.LayoutMode mode)
         {
-            if (gameProcess != null && !gameProcess.HasExited)
+            if (info != null && !info.GameProcess.HasExited)
             {
                 info.Update();
                 if (state.CurrentSplitIndex + 1 < eventList.Length && eventList[state.CurrentSplitIndex + 1].HasOccured(info))
@@ -58,14 +57,19 @@ namespace LiveSplit.StEf2
             }
             else
             {
-                gameProcess = Process.GetProcessesByName("EF2").FirstOrDefault();
+                Process gameProcess = Process.GetProcessesByName("EF2").FirstOrDefault();
                 if (gameProcess == null)
                 {
                     gameProcess = Process.GetProcessesByName("quake3").FirstOrDefault();
                 }
-                if (gameProcess != null)
+
+                if (gameProcess != null && !gameProcess.HasExited)
                 {
                     info = new GameInfo(gameProcess);
+                }
+                else
+                {
+                    info = null;
                 }
             }
         }

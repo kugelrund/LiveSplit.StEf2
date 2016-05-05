@@ -22,6 +22,13 @@ namespace LiveSplit.StEf2
 
         private Process gameProcess;
 
+        public Process GameProcess
+        {
+            get
+            {
+                return gameProcess;
+            }
+        }
         public int PrevGameState { get; private set; }
         public int CurrGameState { get; private set; }
         public string PrevMap { get; private set; }

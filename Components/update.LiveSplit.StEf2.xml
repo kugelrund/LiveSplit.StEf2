@@ -1,12 +1,22 @@
 <updates>
-    <update version="1.0">
-        <files>
-            <file path="Components/LiveSplit.StEf2.dll" status="changed"/>
-        </files>
-        <changelog>
-            <change>
-                Initial release.
-            </change>
-        </changelog>
-    </update>
+  <update version="1.3">
+    <files>
+      <file path="Components/LiveSplit.StEf2.dll" status="changed"/>
+    </files>
+    <changelog>
+      <change>
+        Fixed problems with process recognition when restarting the game.
+      </change>
+    </changelog>
+  </update>
+  <update version="1.0">
+    <files>
+      <file path="Components/LiveSplit.StEf2.dll" status="changed"/>
+    </files>
+    <changelog>
+      <change>
+        Initial release.
+      </change>
+    </changelog>
+  </update>
 </updates>
