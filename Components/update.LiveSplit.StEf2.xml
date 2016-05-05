@@ -9,6 +9,16 @@
       </change>
     </changelog>
   </update>
+  <update version="1.2">
+    <files>
+      <file path="Components/LiveSplit.StEf2.dll" status="changed"/>
+    </files>
+    <changelog>
+      <change>
+        Update for LiveSplit 1.6.
+      </change>
+    </changelog>
+  </update>
   <update version="1.0">
     <files>
       <file path="Components/LiveSplit.StEf2.dll" status="changed"/>
